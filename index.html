@@ -640,11 +640,7 @@
   </nav>
 
   <div class="sidebar-social">
-<<<<<<< HEAD
-    <a class="social-link" href="/cdn-cgi/l/email-protection#305d5542595e574251535509090570575d51595c1e535f5d" title="Email">✉</a>
-=======
-    <a class="social-link" href="mailto:meringrace995@gmail.com" title="Email">✉</a>
->>>>>>> da01d7706438f8287ec00e00e2a5b4334960fc19
+    <a class="social-link" href="/cdn-cgi/l/email-protection#e58880978c8b8297848680dcdcd0a58288848c89cb868a88" title="Email">✉</a>
     <a class="social-link" href="https://github.com/meringrace" target="_blank" title="GitHub">⌥</a>
     <a class="social-link" href="https://twitter.com/merniegrace" target="_blank" title="Twitter">◈</a>
     <a class="social-link" href="https://www.linkedin.com/in/merin-grace-94737a120/" target="_blank" title="LinkedIn">in</a>
@@ -951,11 +947,7 @@ ggplot(data=pbc_clean,aes(x=chol, fill=sex))+
     <div class="contact-wrap">
       <p class="contact-intro">I'd love to connect — whether it's about data science, potential collaborations, or just to say hello.</p>
       <div class="contact-links">
-<<<<<<< HEAD
-        <a class="contact-item" href="/cdn-cgi/l/email-protection#4d20283f24232a3f2c2e287474780d2a202c2421632e2220">
-=======
-        <a class="contact-item" href="mailto:meringrace995@gmail.com">
->>>>>>> da01d7706438f8287ec00e00e2a5b4334960fc19
+        <a class="contact-item" href="/cdn-cgi/l/email-protection#b9d4dccbd0d7decbd8dadc80808cf9ded4d8d0d597dad6d4">
           <div class="contact-icon">✉</div>
           <div class="contact-info">
             <strong>Email</strong>
@@ -991,27 +983,28 @@ ggplot(data=pbc_clean,aes(x=chol, fill=sex))+
 
 <script>
   function showPage(id, link) {
-    // hide all pages
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    // deactivate all nav links
-    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-    // show target
-    document.getElementById('page-' + id).classList.add('active');
-    link.classList.add('active');
-    // close sidebar on mobile
-    document.getElementById('sidebar').classList.remove('open');
-    // reset project detail if going to projects
-    if (id === 'projects') hideProject();
+    document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+    document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
+    document.getElementById("page-" + id).classList.add("active");
+    link.classList.add("active");
+    document.getElementById("sidebar").classList.remove("open");
+    if (id === "projects") hideProject();
   }
 
   function showProject(id) {
-<<<<<<< HEAD
-    document.getElementById('projects-list').style.display =
-=======
-    document.getElementById('projects-list').style.display = 'none';
-    document.querySelectorAll('.project-detail').forEach(d => d.classList.remove('active'));
-    document.getElementById('project-' + id).classList.add('active');
+    document.getElementById("projects-list").style.display = "none";
+    document.querySelectorAll(".project-detail").forEach(d => d.classList.remove("active"));
+    document.getElementById("project-" + id).classList.add("active");
   }
 
-  function hideProject
->>>>>>> da01d7706438f8287ec00e00e2a5b4334960fc19
+  function hideProject() {
+    document.getElementById("projects-list").style.display = "block";
+    document.querySelectorAll(".project-detail").forEach(d => d.classList.remove("active"));
+  }
+
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("open");
+  }
+</script>
+</body>
+</html>
